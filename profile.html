@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <!-- Incluyendo Bootstrap y Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        /* Estilos personalizados */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #9FA0FF;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-content img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .profile-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .profile-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .profile-card p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-icon {
+            font-size: 24px;
+            color: #9FA0FF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="img/LOGO-removebg-preview.png" alt="Logo">
+            <h1 class="mt-2 mb-0">HELPHOME</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Perfil de Usuario</h2>
+        <div class="profile-card">
+            <p><strong>Nombre:</strong> usuario example</p>
+            <p><strong>Correo:</strong> usuario@example.com</p>
+            <p><strong>Teléfono:</strong> +123456789</p>
+            <p><strong>Dirección:</strong> Ciudad, País</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="home.html" class="footer-icon" title="Inicio"><i class="bi bi-house-door-fill"></i></a>
+        <a href="emergency_contacts.html" class="footer-icon" title="Contactos"><i class="bi bi-telephone-fill"></i></a>
+        <a href="help_messages.html" class="footer-icon" title="Mensajes"><i class="bi bi-chat-dots-fill"></i></a>
+        <a href="evidence_upload.html" class="footer-icon" title="Evidencia"><i class="bi bi-camera-fill"></i></a>
+        <a href="profile.html" class="footer-icon" title="Perfil"><i class="bi bi-person-fill"></i></a>
+    </footer>
+
+    <!-- Incluyendo JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

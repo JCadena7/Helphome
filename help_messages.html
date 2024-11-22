@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Alertas</title>
+    <!-- Incluyendo Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluyendo Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, main, footer {
+            flex-shrink: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Estilo del header */
+        header {
+            background-color: #9FA0FF;
+            color: white;
+            padding: 10px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-content img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        /* Estilo de los mensajes y el formulario */
+        .message-option {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .alert-config {
+            margin-top: 30px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilo del footer */
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-icon {
+            font-size: 24px;
+            color: #9FA0FF;
+        }
+    </style>
+</head>
+<body>
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <img src="img/LOGO-removebg-preview.png" alt="Logo">
+                <h1 class="mt-2 mb-0">HELPHOME</h1>
+            </div>
+        </header>
+    
+    <!-- Main Content -->
+    <main class="container my-4">
+        <!-- Opciones de mensajes de ayuda -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="message-option p-3 border rounded">
+                    <h5>Mensaje 1</h5>
+                    <p>¡Ayuda urgente! Necesito asistencia inmediata.</p>
+                    <button class="btn btn-primary mt-2">Enviar</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="message-option p-3 border rounded">
+                    <h5>Mensaje 2</h5>
+                    <p>Estoy en una situación de riesgo.</p>
+                    <button class="btn btn-primary mt-2">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Configurar alerta personalizada -->
+        <div class="alert-config mt-5">
+            <h5>Configurar mi Alerta</h5>
+            <textarea placeholder="Redacta tu alerta personalizada"></textarea>
+            <button class="btn btn-success mt-2">Seleccionar Contactos</button>
+            <button class="btn btn-secondary mt-2">Guardar</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="d-flex justify-content-around">
+        <!-- Iconos de Bootstrap para un diseño más elegante -->
+        <a href="home.html" class="footer-icon" title="Inicio"><i class="bi bi-house-door-fill"></i></a>
+        <a href="emergency_contacts.html" class="footer-icon" title="Contactos"><i class="bi bi-telephone-fill"></i></a>
+        <a href="help_messages.html" class="footer-icon" title="Mensajes"><i class="bi bi-chat-dots-fill"></i></a>
+        <a href="evidence_upload.html" class="footer-icon" title="Evidencia"><i class="bi bi-camera-fill"></i></a>
+        <a href="profile.html" class="footer-icon" title="Perfil"><i class="bi bi-person-fill"></i></a>
+    </footer>
+
+    <!-- Incluyendo JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
